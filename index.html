@@ -7,13 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="lightbox2-dev/src/css/lightbox.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="jumbotron text-center bg-primary text-white">
+    <header class="jumbotron text-center bg-primary col-xs-12 col-sm-12 col-lg-12">
         <h1 class="display-1">
             <a href="/index.html">Webová stránka o webových aplikacích</a></h1>
         <nav>
@@ -26,41 +27,91 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="column">
-            <img class="demo" src="/img/Obrázek1.jpg" onclick="currentSlide(1)" alt="Nature">
-          </div>
-      
-          <div class="column">
-            <img class="demo" src="/img/Obrázek2.jpg" onclick="currentSlide(2)" alt="Snow">
-          </div>
-      
-          <div class="column">
-            <img class="demo" src="/img/Obrázek3.jpg" onclick="currentSlide(3)" alt="Mountains">
-          </div>
-      
-          <div class="column">
-            <img class="demo" src="/img/Obrázek4.jpg" onclick="currentSlide(4)" alt="Lights">
-          </div>
+    <main class="container">
+        <p>-<i>Webová aplikace je aplikace poskytovaná uživatelům z webového serveru
+            přes internet nebo jinou vnitropodnikovou sít’ (intranet). Díky pokročilým webovým technologiím je možné realizovat webovým prostředím stále složitější a
+            komplexnější aplikace, včetně informačních systémů, cloudových služeb apod.</i></p>
+            <hr>
+        <div class="container">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                    <li data-target="#demo" data-slide-to="6"></li>
+                    <li data-target="#demo" data-slide-to="7"></li>
+                    <li data-target="#demo" data-slide-to="8"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <figure class="text-center">
+                            <img src="/img/Obrázek1.jpg" alt="carousel1" width="1200" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="text-center">
+                            <img src="/img/Obrázek2.jpg" alt="carousel2" width="1200" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="text-center">
+                            <img src="/img/Obrázek3.png" alt="carousel3" width="1200" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="text-center">
+                            <img src="/img/Obrázek5.jpg" alt="carousel3" width="1200" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="text-center">
+                            <img src="/img/Obrázek6.png" alt="carousel3" width="1200" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="text-center">
+                            <img src="/img/Obrázek7.png" alt="carousel3" width="1200" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="text-center">
+                            <img src="/img/Obrázek8.png" alt="carousel3" width="1200" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="text-center">
+                            <img src="/img/Obrázek10.png" alt="carousel3" width="1200" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
         </div>
-      </div>
     </main>
-    <footer>
-        <hr>
-        <p>&copy; 2021 - SŠPU Opava - autor: Filip Hluchník</p>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="/js/index.js"></script>
+        <footer>
+            <hr>
+            <p>&copy; 2021 - SŠPU Opava - autor: Filip Hluchník</p>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="lightbox2-dev/src/js/lightbox.js"></script>
 </body>
 
 </html>

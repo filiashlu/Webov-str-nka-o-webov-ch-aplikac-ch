@@ -5,17 +5,20 @@
   box-sizing: border-box;
 }
 
-h1{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 li {
   display: list-item;
   list-style-position: inside;
 }
 
 h1{
-  background: black
+  background: rgb(0, 238, 255);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 dfn{
@@ -46,107 +49,30 @@ li {
   clear: both;
 }
 
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
+.jumbotron {
+  padding-top: 90px;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
+.jumbotron h1 {
+  color: white;
+  font-size: 60px;
+}
+
+table {
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
+  border: 5px solid rgb(51, 137, 249);
+  background: rgb(255, 255, 255,);
+  padding-bottom: 50px;
 }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Caption text */
-.caption-container {
+td {
+  border:3px solid rgb(51, 137, 249);
+  padding: 5px 10px;
   text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
 }
 
-img.demo {
-  opacity: 0.6;
+hr {
+  border-color: white; 
 }
 
 .active,
@@ -154,13 +80,6 @@ img.demo {
   opacity: 1;
 }
 
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 nav {
   background: #0052eb;
@@ -201,32 +120,10 @@ a:hover {
   transition: .5s;
 }
 
-.checkbtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-}
-
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {
-  height: 450px
-}
-
-/* Set gray background color and 100% height */
-.sidenav {
-  padding-top: 20px;
-  background-color: #f1f1f1;
-  height: 100%;
 }
 
 /* Set black background color, white text and some padding */
